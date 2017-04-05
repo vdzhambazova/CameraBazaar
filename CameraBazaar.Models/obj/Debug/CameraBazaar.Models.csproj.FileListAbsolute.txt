@@ -1,0 +1,10 @@
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.dll.config
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.dll
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.pdb
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.dll
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.xml
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.csprojResolveAssemblyReference.cache
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.dll
+c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.pdb

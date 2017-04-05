@@ -1,0 +1,38 @@
+﻿@model CameraBazaar.Models.ViewModels.RegisterUserViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+@using (@Html.BeginForm())
+{
+    <div class="form-group">
+        @Html.LabelFor(u => u.Username)
+        @Html.EditorFor(u => u.Username, new { htmlAttribute = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(u => u.Username)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(u => u.Email)
+        @Html.EditorFor(u => u.Email, new { htmlAttribute = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(u => u.Email)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(u => u.Phone)
+        @Html.EditorFor(u => u.Phone, new { htmlAttribute = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(u => u.Phone)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(u => u.Password)
+        @Html.PasswordFor(u => u.Password, new { htmlAttribute = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(u => u.Password)
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(u => u.ConfirmPassword)
+        @Html.PasswordFor(u => u.ConfirmPassword, new { htmlAttribute = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(u => u.ConfirmPassword)
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Register" class="form-control" />
+    </div>
+}
