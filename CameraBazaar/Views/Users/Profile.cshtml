@@ -1,7 +1,43 @@
-﻿
+﻿@model CameraBazaar.Models.ViewModels.ProfilePageViewModel
 @{
     ViewBag.Title = "Profile";
 }
 
-<h2>Profile</h2>
+<h2>@Html.DisplayFor(vm => vm.Username)</h2>
+
+@Html.DisplayNameFor(vm => vm.Email):
+@Html.DisplayFor(vm => vm.Email)
+<br />
+@Html.DisplayNameFor(vm => vm.Phone):
+@Html.DisplayFor(vm => vm.Phone)
+<br />
+Cameras:
+@Html.DisplayFor(vm => vm.InStockCameras) in stock /
+@Html.DisplayFor(vm => vm.OutOfStockCameras) out of stock
+<br />
+
+<h2>Cameras:</h2>
+
+@if (Model.Cameras.Any())
+{
+    foreach (var cvm in Model.Cameras)
+    {
+        <div style="border: 2px solid ,black">
+            <img src="@cvm.ImageUrl" alt="" width="200" height="200" />
+            @Html.DisplayFor(cam => cvm.Make)
+            @Html.DisplayFor(cam => cvm.Model)
+            $@Html.DisplayFor(cam => cvm.Price)
+            <br />
+            <br />
+            @Html.ActionLink("Details", "Details", new { id = cvm.Id })
+
+            if(@cvm.Quantity > 0){
+            <span class="text-danger"> Out of stock</span>
+            }
+            else {
+            <span class="text-success">In stocck</span>
+            }
+        </div>
+    }
+}
 

@@ -12,3 +12,17 @@ c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Dat
 c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Data\bin\Debug\CameraBazaar.Models.pdb
 c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.Migrations.Initial.resources
 c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.csproj.GenerateResource.Cache
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\CameraBazaar.Data.dll.config
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\CameraBazaar.Data.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\CameraBazaar.Data.pdb
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\CameraBazaar.Models.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\EntityFramework.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\CameraBazaar.Models.pdb
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\EntityFramework.xml
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.csprojResolveAssemblyReference.cache
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.Migrations.Initial.resources
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.csproj.GenerateResource.Cache
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Data\obj\Debug\CameraBazaar.Data.pdb

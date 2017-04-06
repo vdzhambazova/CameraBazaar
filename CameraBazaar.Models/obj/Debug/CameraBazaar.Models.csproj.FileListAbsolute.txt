@@ -8,3 +8,13 @@ c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Mod
 c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.csprojResolveAssemblyReference.cache
 c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.dll
 c:\users\teo\documents\visual studio 2015\Projects\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.pdb
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.dll.config
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\CameraBazaar.Models.pdb
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.xml
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.csprojResolveAssemblyReference.cache
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.dll
+C:\Users\veronika.dzhambazova\Documents\Pers\CameraBazaar\CameraBazaar.Models\obj\Debug\CameraBazaar.Models.pdb
