@@ -51,6 +51,8 @@
   <ItemGroup>
     <Compile Include="Attributes\MaxIsoAttribute.cs" />
     <Compile Include="Attributes\MinIsoAttribute.cs" />
+    <Compile Include="BindingModels\EditUserBindingModel.cs" />
+    <Compile Include="BindingModels\EditUserViewModel.cs" />
     <Compile Include="BindingModels\LoginUserBindingModel.cs" />
     <Compile Include="BindingModels\RegisterUserBindingModel.cs" />
     <Compile Include="Constants\ValidationMessages.cs" />
@@ -61,6 +63,7 @@
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CameraDetailsViewModel.cs" />
     <Compile Include="ViewModels\LoginUserViewModel.cs" />
     <Compile Include="ViewModels\ProfilePageViewModel.cs" />
     <Compile Include="ViewModels\RegisterUserViewModel.cs" />

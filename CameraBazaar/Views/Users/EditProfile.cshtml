@@ -1,0 +1,24 @@
+﻿@model CameraBazaar.Models.BindingModels.EditUserViewModel
+@{
+    ViewBag.Title = "EditProfile";
+}
+
+<h2>Edit Profile</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.LabelFor(vm => vm.Email)
+    @Html.EditorFor(vm => vm.Email, new { htmlAttributes = new { @class = "form-control" } })
+
+    @Html.LabelFor(vm=>vm.Password)
+    @Html.PasswordFor(vm=>vm.Password, new { @class = "form-control" })
+
+    @Html.LabelFor(vm=>vm.Phone)
+    @Html.EditorFor(vm=> vm.Phone, new { htmlAttributes = new { @class = "form-control" } })
+
+    @Html.LabelFor(vm => vm.CurrentPassword)
+    @Html.PasswordFor(vm => vm.CurrentPassword,  new { @class = "form-control" } )
+
+    @Html.ActionLink("Cancel", "Profile", null, new { @class = "btn btn-lg"})
+    <input type = "submit" value = "Edit" class="btn btn-lg" />
+}

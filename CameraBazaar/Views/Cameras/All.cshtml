@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CameraBazaar.Models.ViewModels.ShortCameraViewModel>
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>All</h2>
+
+@foreach (var cam in Model)
+{
+    <div style="border: 2px solid black">
+        <img src="@cam.ImageUrl" alt="" width="200" height="200" />
+        @Html.DisplayFor(make => cam.Make)
+        @Html.DisplayFor(model => cam.Model)
+        $@Html.DisplayFor(price => cam.Price)
+        <br />
+        <br />
+        @Html.ActionLink("Details", "Details", "Cameras", new { id = cam.Id })
+
+        if (cam.Quantity == 0)
+        {
+        <span class="text-danger">Out of stock</span>
+        }
+        else
+        {
+        <span class="text-success">In stock</span>
+        }
+    </div>
+}

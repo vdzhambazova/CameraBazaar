@@ -24,6 +24,14 @@ namespace CameraBazaar
             Mapper.Initialize(expression =>
             {
                 expression.CreateMap<RegisterUserBindingModel, User>();
+                //expression.CreateMap<AddCameraBindingModel, Camera>();
+                //expression.CreateMap<AddCameraBingingModel, AddCameraViewModel>();
+                //expression.CreateMap<Camera, EditCameraViewModel>();
+                //expression.CreateMap<EditCameraBindingModel, EditCameraViewModel>();
+                //expression.CreateMap<EditCameraBindingModel, Camera>();
+                //expression.CreateMap<Camera, DeleteCameraViewModel>();
+                expression.CreateMap<Camera, CameraDetailsViewModel>();
+                expression.CreateMap<Camera, ShortCameraViewModel>();
             });
         }
     }

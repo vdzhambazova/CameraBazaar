@@ -135,6 +135,7 @@
     <Compile Include="Controllers\CamerasController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Security\AuthenticationManager.cs" />
+    <Compile Include="Services\CamerasService.cs" />
     <Compile Include="Services\Service.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Global.asax.cs">
@@ -178,10 +179,12 @@
     <Content Include="Views\Users\Login.cshtml" />
     <Content Include="Views\Users\Profile.cshtml" />
     <Content Include="Views\Users\MyProfile.cshtml" />
+    <Content Include="Views\Users\EditProfile.cshtml" />
+    <Content Include="Views\Cameras\All.cshtml" />
+    <Content Include="Views\Cameras\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Cameras\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

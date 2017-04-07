@@ -1,19 +1,38 @@
-﻿using System.Web.Mvc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
+using CameraBazaar.Models.ViewModels;
+using CameraBazaar.Services;
 
 namespace CameraBazaar.Controllers
 {
+    [RoutePrefix("cameras")]
     public class CamerasController : Controller
     {
-        // GET: Cameras
-        public ActionResult Index()
+        private CamerasService service;
+
+        public CamerasController()
         {
-            return View();
+            this.service = new CamerasService();
         }
 
+        [HttpGet]
+        [Route("all")]
+        [Route("~/")]
+        public ActionResult All()
+        {
+            IEnumerable<ShortCameraViewModel> scvm = this.service.GetAllCameras();
+
+            return this.View(scvm);
+        }
+
+        [HttpGet]
+        [Route("details/id?")]
         // GET: Cameras/Details/5
         public ActionResult Details(int id)
         {
-            return View();
+            CameraDetailsViewModel cdvm = this.service.GetCameraById(id);
+
+            return this.View(cdvm);
         }
 
         // GET: Cameras/Create
