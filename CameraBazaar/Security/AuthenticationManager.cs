@@ -1,12 +1,18 @@
 ﻿using System.Linq;
 using CameraBazaar.Data;
 using CameraBazaar.Models.Models;
+using Microsoft.AspNet.Identity;
 
 namespace CameraBazaar.Security
 {
-    public class AuthenticationManager
+    public class AuthenticationManager : UserManager<User>
     {
         private static CameraBazaarContext context = new CameraBazaarContext();
+
+        public AuthenticationManager(IUserStore<User> store) : base(store)
+        {
+        }
+
         public static bool IsAuthenticated(string sessionId)
         {
             if (sessionId == null)

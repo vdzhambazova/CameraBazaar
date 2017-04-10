@@ -1,0 +1,134 @@
+﻿@using CameraBazaar.Models.Enums
+@model  CameraBazaar.Models.ViewModels.CreateCameraViewModel
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class="text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(vm=>vm.Make, htmlAttributes: new {@class = "control-label col-md-2"})
+            <div class="col-md-10">
+                @Html.EnumDropDownListFor(vm=>vm.Make, htmlAttributes: new {@class = "form-control"})
+                @Html.ValidationMessageFor(vm=>vm.Make," ", new {@class ="text-danger"})
+            </div>
+        </div>
+        
+        <div class ="form-group">
+            @Html.LabelFor(vm=>vm.Model, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.Model, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.Model, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.Price, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.Price, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.Price, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.Quantity, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.Quantity, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.Quantity, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.MinShutterSpeed, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.MinShutterSpeed, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.MinShutterSpeed, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.MaxShutterSpeed, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.MaxShutterSpeed, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.MaxShutterSpeed, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.MinIso, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.MinIso, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.MinIso, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.MaxIso, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.MaxIso, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.MaxIso, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.IsFullFrame, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <div class="checkbox">
+                    @Html.EditorFor(vm => vm.IsFullFrame)
+                    @Html.ValidationMessageFor(vm => vm.IsFullFrame, " ", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.VideoResolution, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.VideoResolution, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.VideoResolution, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.LightMetering, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EnumDropDownListFor(vm => vm.LightMetering, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.LightMetering, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.Descriotion, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.Descriotion, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.Descriotion, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(vm => vm.ImageUrl, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(vm => vm.ImageUrl, new { @class = "form-control" })
+                @Html.ValidationMessageFor(vm => vm.ImageUrl, " ", new { @class = "text-danger" })
+            </div>
+        </div>
+            
+        <div class="form-group">
+            <div class="col-lg-offset-10 col-lg-2">
+                <input type="submit" value="Add" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to cameras", "All")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+

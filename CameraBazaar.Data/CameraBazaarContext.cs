@@ -1,10 +1,11 @@
 using CameraBazaar.Models.Models;
+using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace CameraBazaar.Data
 {
     using System.Data.Entity;
 
-    public class CameraBazaarContext : DbContext
+    public class CameraBazaarContext : IdentityDbContext<User>
     {
       
         public CameraBazaarContext()

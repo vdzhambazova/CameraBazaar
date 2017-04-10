@@ -1,0 +1,75 @@
+﻿@model CameraBazaar.Models.ViewModels.CameraDetailsViewModel
+<h3>
+    @Html.DisplayFor(vm => vm.Make) @Html.DisplayFor(vm => vm.Model) - $@Html.DisplayFor(vm => vm.Price) -
+    @if (@Model.Quantity > 0)
+    {
+        <span class="text-danger"> Out of stock</span>
+    }
+    else
+    {
+        <span class="text-success">In stock</span>
+    }
+</h3>
+
+<br />
+<h3>
+    @if (Model.Username != null)
+    {
+        @Html.ActionLink(@Model.Username, "Profile", "Users")
+    }
+</h3>
+
+<br />
+
+<img src=@Model.ImageUrl alt="" width="200" height="200" />
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(vm => vm.IsFullFrame):
+    </dt>
+    <dd>
+        @if (Model.IsFullFrame)
+        {
+            @:Yes
+        }
+        else
+        {
+            @:No
+        }
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.MinShutterSpeed)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.MinShutterSpeed)"
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.MaxShutterSpeed)
+    </dt>
+    <dd>
+        1/@Html.DisplayFor(vm => vm.MaxShutterSpeed)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.MinIso)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.MinIso)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.VideoResolution)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.VideoResolution)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.LightMetering)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.LightMetering)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.Descriotion)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.Descriotion)
+    </dd>
+</dl>

@@ -14,9 +14,9 @@
         $@Html.DisplayFor(price => cam.Price)
         <br />
         <br />
-        @Html.ActionLink("Details", "Details", "Cameras", new { id = cam.Id })
+        @Html.ActionLink("Details", "Details", new { id = cam.Id })
 
-        if (cam.Quantity == 0)
+        @if (cam.Quantity == 0)
         {
         <span class="text-danger">Out of stock</span>
         }
@@ -24,5 +24,8 @@
         {
         <span class="text-success">In stock</span>
         }
+
+        @Html.ActionLink("Delete", "Delete", new { id = cam.Id })
+        @Html.ActionLink("Edit", "Edit", new {id= cam.Id})
     </div>
 }

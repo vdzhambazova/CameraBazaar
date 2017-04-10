@@ -1,11 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNet.Identity.EntityFramework;
 using static CameraBazaar.Models.Constants.ValidationMessages;
 using static CameraBazaar.Models.Constants.ValidationRegex;
 
 namespace CameraBazaar.Models.Models
 {
-    public class User
+    public class User :IdentityUser
     {
         public User()
         {

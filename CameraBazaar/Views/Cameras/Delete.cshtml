@@ -1,0 +1,83 @@
+﻿@model CameraBazaar.Models.ViewModels.DeleteCameraViewModel
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete Camera</h2>
+
+<h3>Are you sure you want to delete this camera</h3>
+
+<img src=@Model.ImageUrl alt="" width="200" height="200" />
+<dl class="dl-horizontal">
+    <dt>
+        @Html.DisplayNameFor(vm=>vm.Make)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm=>vm.Make)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.Model)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.Model)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.Price)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.Price)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.Quantity)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.Quantity)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.MinShutterSpeed)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.MinShutterSpeed)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.MaxShutterSpeed)
+    </dt>
+    <dd>
+        1/@Html.DisplayFor(vm => vm.MaxShutterSpeed)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.MinIso)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.MinIso)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.VideoResolution)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.VideoResolution)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.LightMetering)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.LightMetering)
+    </dd>
+    <dt>
+        @Html.DisplayNameFor(vm => vm.Descriotion)
+    </dt>
+    <dd>
+        @Html.DisplayFor(vm => vm.Descriotion)
+    </dd>
+</dl>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-actions no-color">
+        <input type="submit" value="Delete" class="btn btn-default"/>
+        <br />
+        @Html.ActionLink("Back to Cameras", "All")
+    </div>
+}

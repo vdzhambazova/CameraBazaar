@@ -1,33 +1,13 @@
 ﻿@model CameraBazaar.Models.ViewModels.CameraDetailsViewModel
+
 @{
     ViewBag.Title = "Details";
+    Layout = "../Shared/CameraDetailsLayout.cshtml";
 }
-
+@Layout
 <h2>Details</h2>
 
-<h3>
-    @Html.DisplayNameFor(vm => vm.Make)
-    @Html.DisplayNameFor(vm => vm.Model)
-    $@Html.DisplayNameFor(vm => vm.Price) -
-    if(vm.Quantity > 0){
-    <span class="text-danger"> Out of stock</span>
-    }
-    else {
-    <span class="text-success">In stocck</span>
-    }
-</h3>
+@Html.Partial("CameraDetailsPartial")
 
-<h3>
-    @if (Model.Username!= null)
-    {
-        @Html.ActionLink(@Model.Username, "Profile", "Users")
-    }
-</h3>
-
-<br />
-<dl class="dl-horizontal">
-    <dt>
-        @Html
-    </dt>
-</dl>
+@Html.ActionLink("Back to cameras", "All")
 
